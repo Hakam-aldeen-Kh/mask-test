@@ -9,28 +9,29 @@ const Hero: React.FC = () => {
         className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top"
       >
         <Image
-          src='/images/home-page/hero-background-mobile.webp'
+          src="/images/home-page/hero-background-mobile.webp"
           alt="Company's legacy image"
-          sizes=" 100vw"
-          quality={50}
+          sizes="100vw"
+          quality={75}
           fill
           priority
-          style={{
-            objectFit: "cover",
-          }}
-          className='-z-10 block lg:hidden'
+          placeholder="blur"
+          blurDataURL="/images/home-page/hero-background-mobile-small.webp"
+          style={{ objectFit: "cover" }}
+          className="-z-10 block lg:hidden"
         />
+
         <Image
-          src='/images/home-page/hero-background.webp'
+          src="/images/home-page/hero-background.webp"
           alt="Company's legacy image"
           sizes=" 100vw"
-          quality={50}
+          quality={100}
           fill
           priority
           style={{
             objectFit: "cover",
           }}
-          className='-z-10 hidden lg:block'
+          className="-z-10 hidden lg:block"
         />
         <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
           {/* image 1  */}
